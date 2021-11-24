@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: rgb(250,250,250);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*p5画布*/
+main canvas{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+/*header*/
+.header_section{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.header_section .title_h2{
+    display: flexbox;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 32px;
+}
+@media only screen and (min-width: 1000px) {/*电脑*/
+    .header_section .title_h2{
+        font-size: 50px;
+    }
+    .header_section{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 1000px) {/*手机*/
+    .header_section .title_h2{
+        font-size: 20px;
+    }
+    .header_section{
+        height: 50vh;
+    }
+}
+/*body*/
+.body_section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
+    overflow-x: hidden;
+}
+.body_section>.innerCop_div{
+    height: 200px;
+    position: relative;
+    background-color: rgba(231, 231, 231, 0.548);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+}
+.body_section>.innerCop_div>.innerImg_div{
+    position: absolute;
+    height: 200px;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
+}
+.body_section>.innerCop_div>.innerWords_div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    transition: 0.2s ease-in-out;
+}
+.body_section>.innerCop_div>.innerWords_div>.innerTitle_h2{
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 2px;
+    white-space: nowrap
+}
+.body_section>.innerCop_div>.innerWords_div>.innerDate_h4{
+    font-size: 15x;
+    color: rgb(66, 66, 66);
+    padding: 5px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.body_section>.innerCop_div>.innerWords_div>.innerAbout_p{
+    font-size: 15px;
+    padding: 5px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.body_section>.innerCop_div>.innerWords_div>.type_p{
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: rgb(54, 54, 54);
+    white-space: nowrap
+}
+.body_section>.innerCop_div>.innerWords_div>.type_p>span{
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border: 2px solid gray;
+    color: rgb(54, 54, 54);
+    white-space: nowrap
+}
+@media only screen and (min-width: 1000px) {/*电脑*/
+    .body_section{
+        padding-top: 100vh;
+    }
+    .body_section>.innerCop_div{
+        width: 30%;
+        margin: 1.5%;
+    }
+    .body_section>.innerCop_div>.innerImg_div{
+        width: 150px;
+        left: -150px;
+    }
+    /*animations*/
+    .body_section>.innerCop_div:hover .innerImg_div{
+        left: 0;
+    }
+    .body_section>.innerCop_div:hover .innerWords_div{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 1000px) {/*手机*/
+    .body_section{
+        padding-top: 50vh;
+    }
+    .body_section>.innerCop_div{
+        width: 48%;
+        margin: 1%;
+    }
+    .body_section>.innerCop_div>.innerImg_div{
+        display: none;
+    }
+    .body_section>.innerCop_div>.innerWords_div{
+        padding-left: 0;
+    }
+}    
+/*footer*/
+.footer_section{
+    width: 100vw;
+    height: 300px;
+    z-index: 1;
+    overflow-x: hidden;
+}

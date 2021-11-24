@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgb(196, 196, 196);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(250,250,250);
+    position: relative;
+}
+.normalSection{
+    overflow: hidden;
+    background-color: rgba(146, 146, 146, 0.192);
+}
+@media only screen and (min-width: 1000px) {/*电脑*/
+    .normalSection{
+        margin-left: 15vw;
+        width: 70vw;
+        margin-right: 15vw;
+    }
+}
+@media only screen and (max-width: 1000px) {/*手机*/
+    .normalSection{
+        width: 100vw;
+    }
+}
+/*nav*/
+.nav_section{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    backdrop-filter: blur(2px);
+    z-index: 5;
+}
+.nav_section p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(46, 46, 46);
+    padding: 10px;
+}
+.nav_section a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+.nav_section a:hover{
+    background-color: gray;
+}
+/*header*/
+.header_section{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: rgba(146, 146, 146, 0.336);
+    height: 150px;
+    position: relative;
+}
+.header_section .title_h2{
+    padding: 6px;
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.header_section .date_h3{
+    padding: 6px;
+    padding-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.header_section .innerImg_div{
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width: 1000px) {/*手机*/
+    .header_section .innerImg_div{
+        display: none;
+    }
+}
+/*body*/
+.body_section{
+    position: relative;
+}
+.body_section>pre{
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/*footer*/
+.footer_section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: rgba(146, 146, 146, 0.336);
+    height: 150vh;
+    position: relative;
+}
+.footer_section .words_div,.footer_section .ad_div{
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: rgb(75, 75, 75);
+    padding: 5px;
+    margin-right: 20px;
+    text-align: right;
+}
+.footer_section .add_p{
+    position: absolute;
+    bottom: 40vh;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    color: rgb(75,75,75);
+}
+@media only screen and (min-width: 1000px) {/*电脑*/
+    .footer_section .add_p{
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width: 1000px) {/*手机*/
+    .footer_section .add_p{
+        font-size: 17px;
+    }
+}
