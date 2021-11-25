@@ -46,5 +46,21 @@ var istore=[
         date:"2021.6.3",
         about:"ᓚᘏᗢ",
         type:"交作业",
+    },
+    {
+        page:1,
+        fileName:"AAG_yj",
+        title:"关于语境",
+        date:"2021.4.7",
+        about:"被迫营业",
+        type:"交作业",
+    },
+    {
+        page:1,
+        fileName:"AAH_sj",
+        title:"真的是随笔",
+        date:"2020.4.6",
+        about:"做梦因而活着",
+        type:"宗教?",
     }
 ]
