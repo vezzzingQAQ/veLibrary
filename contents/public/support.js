@@ -1,6 +1,6 @@
 function loadImg(page,fileNameSimple){
     document.querySelector(".header_section").innerHTML+=`
-    <div class="innerImg_div" style="background-image: url(../../imgs/page_${page}/${fileNameSimple}.JPG);"></div>
+    <div class="innerImg_div" style="background-image: url(../../imgs/page_${page}/${fileNameSimple}.jpg);"></div>
     `;
 }
 function analyse(){
