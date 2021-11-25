@@ -4,18 +4,33 @@ function listArticles(){
     }
 }
 function addComponent(page,fileName,title,date,about,type){
-    let textTemp=`
-    <div class="innerCop_div" onclick="location='../contents/page_${page}/${fileName}.html'">
-        <div class="innerImg_div" style="background-image: url(../imgs/page_${page}/${fileName.slice(0,3)}.JPG);"></div>
-        <div class="innerWords_div">
-            <h2 class="innerTitle_h2">${title}</h2>
-            <h4 class="innerDate_h4">${date}</h4>
-            <p class="innerAbout_p">${about}</p>
-            <p class="type_p">type:<span>${type}</span></p>
+    try{
+        let textTemp=`
+            <div class="innerCop_div" onclick="location='../contents/page_${page}/${fileName}.html'">
+                <div class="innerImg_div" style="background-image: url(../imgs/page_${page}/${fileName.slice(0,3)}.JPG);"></div>
+                <div class="innerWords_div">
+                    <h2 class="innerTitle_h2">${title}</h2>
+                    <h4 class="innerDate_h4">${date}</h4>
+                    <p class="innerAbout_p">${about}</p>
+                    <p class="type_p">type:<span>${type}</span></p>
+                </div>
+            </div>
+        `
+        document.querySelector(".body_section").innerHTML+=textTemp;
+    }catch{
+        let textTemp=`
+        <div class="innerCop_div" onclick="location='../contents/page_${page}/${fileName}.html'">
+            <div class="innerImg_div" style="background-image: url(../imgs/page_${page}/${fileName.slice(0,3)}.JPG);"></div>
+            <div class="innerWords_div">
+                <h2 class="innerTitle_h2">${title}</h2>
+                <h4 class="innerDate_h4">${date}</h4>
+                <p class="innerAbout_p">${about}</p>
+                <p class="type_p">type:<span>${type}</span></p>
+            </div>
         </div>
-    </div>
-    `
-    document.querySelector(".body_section").innerHTML+=textTemp;
+        `
+        document.querySelector(".body_section").innerHTML+=textTemp;
+    }
 }
 function addPages(all,current){
     var box=document.querySelector(".content_section");
