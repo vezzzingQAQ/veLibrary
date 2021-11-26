@@ -62,5 +62,22 @@ var istore=[
         date:"2020.4.6",
         about:"做梦因而活着",
         type:"宗教?",
-    }
+    },
+    {
+        page:1,
+        fileName:"AAI_www",
+        title:"风的世界",
+        date:"2020.3.20",
+        about:"有心无力",
+        type:"小说?",
+    },
+    {
+        page:1,
+        fileName:"AAJ_vzbb",
+        title:"常日选集",
+        date:"2019?",
+        about:"为人 处事 处世",
+        type:"宗教?",
+    },
+
 ]
