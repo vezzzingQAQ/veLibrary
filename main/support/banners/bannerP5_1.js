@@ -22,7 +22,7 @@ function Oscillator(velocityX,velocityY,velocityZ,ampitudeX,ampitudeY,ampitudeZ)
         var z=sin(this.angle.z)*this.ampitude.z;
         this.velocity.limit(3);
         strokeWeight(0.3);
-        stroke(this.colorR,this.colorB,this.colorG);
+        stroke(this.colorR,this.colorB,this.colorG,map(this.velocity,0,3,0,255));
         noFill();
         //line(0,0,0,x,y,z);
         push();

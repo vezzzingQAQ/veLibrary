@@ -39,3 +39,15 @@ function addPages(all,current){
     textTemp+="</div>";
     box.innerHTML+=textTemp;
 }
+//滚动检测
+function scrollAni(){
+    var p5canvas=document.querySelector(".p5Canvas");
+    var titles=document.querySelectorAll(".header_section ul li");
+    var allTitles=document.querySelector(".header_section ul");
+    if(window.scrollY<255*3){
+        allTitles.style.top="calc(50vh + "+(window.scrollY/3)+"px)";
+        allTitles.style.color="rgb(15,15,15,"+(255*3-window.scrollY)/(255*3)+")";
+        p5canvas.style.opacity=(255*3-window.scrollY)/(255*3);
+        p5canvas.style.top=(-window.scrollY/3)+"px";
+    }
+}

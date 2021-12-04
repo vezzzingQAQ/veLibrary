@@ -79,5 +79,12 @@ var istore=[
         about:"为人 处事 处世",
         type:"宗教?",
     },
-
+    {
+        page:1,
+        fileName:"AAK_xzzy",
+        title:"材料小组作业",
+        date:"2021.12.4",
+        about:"泡沫",
+        type:"交作业",
+    },
 ]
