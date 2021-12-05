@@ -8,9 +8,9 @@ function Oscillator(velocityX,velocityY,velocityZ,ampitudeX,ampitudeY,ampitudeZ)
     this.ampitude=createVector(ampitudeX,ampitudeY,ampitudeZ);
     this.rotate=0;
     this.rotateSpeed=random(0.001,0.1);
-    this.colorR=random(10,155);
-    this.colorG=random(10,155);
-    this.colorB=random(10,155);
+    this.colorR=random(110,255);
+    this.colorG=random(110,255);
+    this.colorB=random(110,255);
 
     this.oscillate=function(){
         this.angle.add(this.velocity);
@@ -21,10 +21,8 @@ function Oscillator(velocityX,velocityY,velocityZ,ampitudeX,ampitudeY,ampitudeZ)
         var y=sin(this.angle.y)*this.ampitude.y;
         var z=sin(this.angle.z)*this.ampitude.z;
         this.velocity.limit(3);
-        strokeWeight(0.3);
-        stroke(this.colorR,this.colorB,this.colorG,map(this.velocity,0,3,0,255));
-        noFill();
-        //line(0,0,0,x,y,z);
+        noStroke();
+        fill(this.colorR,this.colorB,this.colorG);
         push();
             translate(x,y,z);
             rotateX(this.rotate);

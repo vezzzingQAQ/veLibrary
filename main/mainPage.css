@@ -11,6 +11,9 @@ body{
 ::-webkit-scrollbar{
     display: none;
 }
+::selection{
+    background-color: rgba(128, 128, 128, 0.445);
+}
 /*p5画布*/
 main canvas{
     position: fixed;

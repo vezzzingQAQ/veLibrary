@@ -87,4 +87,12 @@ var istore=[
         about:"泡沫",
         type:"交作业",
     },
+    {
+        page:1,
+        fileName:"AAL_wbzy",
+        title:"文本作业",
+        date:"2021.12.5",
+        about:"绳-法则",
+        type:"交作业",
+    },
 ]

@@ -48,6 +48,6 @@ function scrollAni(){
         allTitles.style.top="calc(50vh + "+(window.scrollY/3)+"px)";
         allTitles.style.color="rgb(15,15,15,"+(255*3-window.scrollY)/(255*3)+")";
         p5canvas.style.opacity=(255*3-window.scrollY)/(255*3);
-        p5canvas.style.top=(-window.scrollY/3)+"px";
+        p5canvas.style.top=(-window.scrollY/5)+"px";
     }
 }
