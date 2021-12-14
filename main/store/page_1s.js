@@ -95,4 +95,12 @@ var istore=[
         about:"绳-法则",
         type:"交作业",
     },
+    {
+        page:1,
+        fileName:"AAM_lecture",
+        title:"新苗开题演讲",
+        date:"2021.12.8",
+        about:"一切皆已注定",
+        type:"事业",
+    },
 ]
