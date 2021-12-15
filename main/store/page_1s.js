@@ -103,4 +103,12 @@ var istore=[
         about:"一切皆已注定",
         type:"事业",
     },
+    {
+        page:1,
+        fileName:"AAN_sh",
+        title:"科学的历程随想",
+        date:"2021.12.14",
+        about:"交作业",
+        type:"读后感",
+    },
 ]
